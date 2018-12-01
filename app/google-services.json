@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "435808662685",
+    "firebase_url": "https://trabalhofinal-4abee.firebaseio.com",
+    "project_id": "trabalhofinal-4abee",
+    "storage_bucket": "trabalhofinal-4abee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435808662685:android:7775b5b0a5ae473b",
+        "android_client_info": {
+          "package_name": "com.example.iuribreno.trabalhofinalofficial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435808662685-3089do66vt3l37tls2mp0hof1snkknmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iuribreno.trabalhofinalofficial",
+            "certificate_hash": "f0985d76cfef2a54f587426fe5728611665641f3"
+          }
+        },
+        {
+          "client_id": "435808662685-9q0bur50jn2o33282be61vr83bnsndbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuZqbc0H7Ng3uHRooLU5QjkMY_kTvWOGk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435808662685-9q0bur50jn2o33282be61vr83bnsndbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15px"
+    tools:context=".RealizarConsultaActity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paciente:"/>
+
+    <TextView
+        android:id="@+id/pacienteAtendidoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Nome do paciente"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidade:"/>
+
+    <TextView
+        android:id="@+id/especialidadeAtendidoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Especialidade selecionada"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Queixas:"/>
+
+    <TextView
+        android:id="@+id/queixasAtendidoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="Queixas do paciente"/>
+
+    <TextView
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatório:"/>
+
+    <EditText
+        android:id="@+id/relatorioEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        android:inputType="text|textMultiLine"/>
+
+    <Button
+        android:id="@+id/salvarConsultaRealizadaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+</LinearLayout>

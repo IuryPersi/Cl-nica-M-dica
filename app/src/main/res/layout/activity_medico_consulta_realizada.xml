@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15px"
+    tools:context=".MedicoConsultaRealizadaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paciente:"/>
+
+    <TextView
+        android:id="@+id/pacienteAtendidoRealizadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Nome do paciente"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidade:"/>
+
+    <TextView
+        android:id="@+id/especialidadeAtendidoRealizadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Especialidade selecionada"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Queixas:"/>
+
+    <TextView
+        android:id="@+id/queixasAtendidoRealizadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="Queixas do paciente"/>
+
+    <TextView
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatório:"/>
+
+    <TextView
+        android:id="@+id/relatorioAtendidoRealizadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="Relatório"/>
+
+
+    <Button
+        android:id="@+id/goToHomeButtonFromConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+</LinearLayout>

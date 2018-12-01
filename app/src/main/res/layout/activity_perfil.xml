@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome :"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="iury"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="iurypersi@gmail.com"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/textViewTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone :"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="264dp" />
+
+        <EditText
+            android:id="@+id/telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="85 992337517"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="311dp" />
+
+        <TextView
+            android:id="@+id/textViewEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereco :"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <EditText
+            android:id="@+id/endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="quixada"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="440dp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senha :"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="12345678" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_editarBD"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:text="Salvar Dados" />
+
+            <Button
+                android:id="@+id/button_cancelarEdit"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:text="Cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
