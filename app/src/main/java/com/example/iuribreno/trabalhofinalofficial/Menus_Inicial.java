@@ -33,6 +33,7 @@ public class Menus_Inicial extends AppCompatActivity {
     private Button buttonVisConsultasMarcadas;
     private Button buttonlogout;
     private Button buttonDuvidasApp;
+    private Button buttonVisConsultasAtendidas;
     private ImageButton goToMap;
     private UsuarioService usuarioService = new UsuarioService();
 
@@ -44,7 +45,7 @@ public class Menus_Inicial extends AppCompatActivity {
         buttonlogout =  (Button) findViewById(R.id.efetuarLogoutuUser);
         buttonVisPerfil = (Button) findViewById(R.id.buttonVisPerfil);
         buttonMarcConsulta = (Button) findViewById(R.id.buttonMarcConsulta);
-        buttonVisConsultasMarcadas = (Button) findViewById(R.id.buttonVisConsultasMarcadas);
+        buttonVisConsultasAtendidas = (Button) findViewById(R.id.buttonVisConsultasAtendidas);
 
         buttonDuvidasApp = (Button) findViewById(R.id.buttonDuvidasApp);
 
@@ -68,7 +69,7 @@ public class Menus_Inicial extends AppCompatActivity {
             }
         });
 
-        buttonVisConsultasMarcadas.setOnClickListener(new View.OnClickListener() {
+        buttonVisConsultasAtendidas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 abrirTelaConsultasMarcadas();
@@ -98,6 +99,14 @@ public class Menus_Inicial extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Menus_Inicial.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonVisConsultasAtendidas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Menus_Inicial.this, ConsultasAtendidasPacienteActivity.class);
                 startActivity(intent);
             }
         });
@@ -144,10 +153,10 @@ public class Menus_Inicial extends AppCompatActivity {
     }
 
     public void abrirLogout(){
-        Intent abrirTelaDuvidasApp = new Intent(this,MainActivity.class);
-        startActivity(abrirTelaDuvidasApp);
+        FirebaseAuth.getInstance().signOut();
+        Intent goToMainActivity = new Intent(this,MainActivity.class);
+        startActivity(goToMainActivity);
         finish();
-
     }
 
 

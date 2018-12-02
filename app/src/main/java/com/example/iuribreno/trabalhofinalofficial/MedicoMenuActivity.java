@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Usuario;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MedicoMenuActivity extends AppCompatActivity {
     private Button pendentesButton;
@@ -42,6 +43,7 @@ public class MedicoMenuActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(MedicoMenuActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();

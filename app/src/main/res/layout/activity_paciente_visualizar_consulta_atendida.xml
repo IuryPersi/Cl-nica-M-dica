@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15px"
+    tools:context=".RealizarConsultaActity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidade:"/>
+
+    <TextView
+        android:id="@+id/visualizarEspecialidadeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Especialidade selecionada"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Queixas:"/>
+
+    <TextView
+        android:id="@+id/visualizarQueixaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="Queixas do paciente"/>
+
+    <TextView
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatório:"/>
+
+    <TextView
+        android:id="@+id/visualizarRelatorioTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="Queixas do paciente"/>
+</LinearLayout>

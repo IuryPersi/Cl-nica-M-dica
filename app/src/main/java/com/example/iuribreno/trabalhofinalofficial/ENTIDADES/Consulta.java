@@ -39,6 +39,18 @@ public class Consulta {
         this.notificado = false;
     }
 
+    public Consulta(String id, String especialidade, String medico, String usuario, String relatorio, String queixas, boolean atendido, boolean notificado, long time) {
+        this.id = id;
+        this.especialidade = especialidade;
+        this.medico = medico;
+        this.usuario = usuario;
+        this.relatorio = relatorio;
+        this.queixas = queixas;
+        this.atendido = atendido;
+        this.notificado = notificado;
+        this.time = time;
+    }
+
     public Consulta(Map.Entry<String, Object> map){
         Map singleUser = (Map) map.getValue();
         setTime( Long.parseLong(singleUser.get("time").toString()));

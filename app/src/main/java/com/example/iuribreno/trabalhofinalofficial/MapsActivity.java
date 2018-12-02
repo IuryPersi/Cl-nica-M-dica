@@ -30,7 +30,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
-
     }
 
     @Override

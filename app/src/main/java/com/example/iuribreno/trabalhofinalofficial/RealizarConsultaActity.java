@@ -73,8 +73,5 @@ public class RealizarConsultaActity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

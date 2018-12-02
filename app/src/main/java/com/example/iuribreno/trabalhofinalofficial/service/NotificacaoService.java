@@ -16,7 +16,6 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Consulta;
-import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Usuario;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -93,6 +92,6 @@ public class NotificacaoService extends Service {
                 .setContentText(message)
                 .setContentInfo("Info");
 
-        notificationManager.notify(/*notification id*/1, notificationBuilder.build());
+        notificationManager.notify(1, notificationBuilder.build());
     }
 }
