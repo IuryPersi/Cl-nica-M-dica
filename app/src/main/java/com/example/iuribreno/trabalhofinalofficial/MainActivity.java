@@ -1,6 +1,7 @@
 package com.example.iuribreno.trabalhofinalofficial;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.iuribreno.trabalhofinalofficial.DAO.ConfiguracaoFirebase;
 import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Usuario;
+import com.example.iuribreno.trabalhofinalofficial.broadcast.InternetBroadcast;
 import com.example.iuribreno.trabalhofinalofficial.service.NotificacaoService;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -56,9 +58,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("android.net.wifi.WIFI_STATE_CHANGED");
+
+        InternetBroadcast internetBroadcast = new InternetBroadcast();
+        registerReceiver(internetBroadcast, filter);
     }
-
-
 
     public void validarLogin(){
         auth = ConfiguracaoFirebase.getFirebaseAuth();

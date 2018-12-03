@@ -57,6 +57,12 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".ConsultasAtendidasPacienteActivity" />
         <activity android:name=".PacienteVisualizarCOnsultaAtendida"></activity>
+
+        <receiver android:name=".broadcast.InternetBroadcast">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

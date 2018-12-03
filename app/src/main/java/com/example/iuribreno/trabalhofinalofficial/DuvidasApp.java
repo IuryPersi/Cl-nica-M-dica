@@ -12,19 +12,5 @@ public class DuvidasApp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_duvidas_app);
-
-       /* buttonVoltar = (Button) findViewById(R.id.buttonVoltarMenu);
-
-        buttonVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                abrirTelaMenus();
-            }
-        });*/
     }
-
-  /*  public void abrirTelaMenus(){
-        Intent abrirTelaMenus = new Intent(this,Menus_Inicial.class);
-        startActivity(abrirTelaMenus);
-    }*/
 }
