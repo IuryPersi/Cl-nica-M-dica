@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Usuario;
 import com.example.iuribreno.trabalhofinalofficial.service.NotificacaoService;
 import com.example.iuribreno.trabalhofinalofficial.service.UsuarioService;
+import com.facebook.login.LoginManager;
 import com.google.firebase.FirebaseError;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -154,6 +155,7 @@ public class Menus_Inicial extends AppCompatActivity {
 
     public void abrirLogout(){
         FirebaseAuth.getInstance().signOut();
+        LoginManager.getInstance().logOut();
         Intent goToMainActivity = new Intent(this,MainActivity.class);
         startActivity(goToMainActivity);
         finish();

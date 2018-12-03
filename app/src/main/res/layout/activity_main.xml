@@ -1,112 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
-
-    <LinearLayout
-        android:layout_width="388dp"
-        android:layout_height="74dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="65dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/buttonCadastrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="TelaCadastro"
-            android:text="Cadastre-se" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="388dp"
-        android:layout_height="74dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="160dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/buttonEntrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Entrar" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="388dp"
-        android:layout_height="74dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="247dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Senha :"
-            android:textSize="25dp"/>
-
-        <EditText
-            android:id="@+id/senha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:text="12345678"
-            android:inputType="textPassword" />
-
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
         app:srcCompat="@drawable/icon_consulta" />
 
-    <LinearLayout
-        android:layout_width="388dp"
-        android:layout_height="74dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="328dp"
-        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="E-mail :"
+        android:textSize="25dp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="iurypersii@gmail.com" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Senha :"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="12345678"
+        android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="E-mail :"
-            android:textSize="25dp"/>
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
+            android:onClick="TelaCadastro"
+            android:text="Cadastre-se" />
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:text="iurypersii@gmail.com"
-            android:inputType="textEmailAddress" />
-    </LinearLayout>
+            android:text="Entrar" />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonFacebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp" />
 
 
-</RelativeLayout>
+</LinearLayout>

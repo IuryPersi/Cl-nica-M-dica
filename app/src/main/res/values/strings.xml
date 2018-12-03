@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">TrabalhoFinalOfficial</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id">2178904805654394</string> <string name="fb_login_protocol_scheme">fb2178904805654394</string>
 </resources>
