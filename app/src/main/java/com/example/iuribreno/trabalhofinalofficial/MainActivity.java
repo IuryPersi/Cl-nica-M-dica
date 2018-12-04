@@ -18,6 +18,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.iuribreno.trabalhofinalofficial.DAO.ConfiguracaoFirebase;
+import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Clinica;
 import com.example.iuribreno.trabalhofinalofficial.ENTIDADES.Usuario;
 import com.example.iuribreno.trabalhofinalofficial.broadcast.InternetBroadcast;
 import com.example.iuribreno.trabalhofinalofficial.service.NotificacaoService;
@@ -132,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
                 // ...
             }
         });
+
+
     }
 
     public void validarLogin(){
